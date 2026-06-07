@@ -1,58 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Grocery Shop Management Platform</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background-color:#f4f4f4;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background-color:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    text-align:center;
+    margin-top:10px;
+}
+
+nav ul li{
+    display:inline;
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* Hero Section */
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+button{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#004d00;
+}
+
+/* Sections */
+
+section{
+    padding:50px;
+}
+
+section h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:30px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin:15px auto;
+    width:80%;
+}
+
+.card h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+/* Steps */
+
+.steps{
+    text-align:center;
+}
+
+.steps div{
+    display:inline-block;
+    background:white;
+    border:1px solid #ccc;
+    padding:15px;
+    margin:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Smart Grocery Shop Management Platform</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Inventory</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Suppliers</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
 
-    <section class="hero">
-        <h2>Manage Your Grocery Business Efficiently</h2>
-        <p>Track inventory, manage sales, suppliers, customers, and generate reports.</p>
-        <button>Get Started</button>
-    </section>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</nav>
 
-    <section class="features">
-        <div class="card">
-            <h3>Inventory Management</h3>
-            <p>Track stock levels and receive low-stock alerts.</p>
-        </div>
+<section class="hero">
+    <h1>Smart Grocery Hub</h1>
 
-        <div class="card">
-            <h3>Sales Tracking</h3>
-            <p>Monitor daily, weekly, and monthly sales.</p>
-        </div>
+    <p>AI-Powered B2B Grocery Business Platform</p>
 
-        <div class="card">
-            <h3>Supplier Management</h3>
-            <p>Manage supplier details and purchase orders.</p>
-        </div>
+    <p>
+        Manage inventory, compare suppliers, place orders,
+        and optimize your grocery business efficiently.
+    </p>
 
-        <div class="card">
-            <h3>Analytics Dashboard</h3>
-            <p>View revenue, profit, and business insights.</p>
-        </div>
-    </section>
+    <button>Get Started</button>
+    <button>Learn More</button>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Smart Grocery Shop Management Platform</p>
-    </footer>
+<section>
+    <h2>Key Features</h2>
+
+    <div class="card">
+        <h3> Inventory Management</h3>
+        <p>Track stock levels and manage inventory efficiently.</p>
+    </div>
+
+    <div class="card">
+        <h3>🛒 Direct Ordering</h3>
+        <p>Order directly from retailers and wholesalers.</p>
+    </div>
+
+    <div class="card">
+        <h3> AI Recommendations</h3>
+        <p>Receive smart reorder and inventory suggestions.</p>
+    </div>
+
+    <div class="card">
+        <h3> Business Analytics</h3>
+        <p>Analyze inventory, purchases, and business growth.</p>
+    </div>
+</section>
+
+<section>
+    <h2>How It Works</h2>
+
+    <div class="steps">
+        <div>Register</div>
+        <div>Add Inventory</div>
+        <div>Monitor Stock</div>
+        <div>Place Orders</div>
+        <div>Track Deliveries</div>
+    </div>
+</section>
+
+<section>
+    <h2>User Roles</h2>
+
+    <div class="card">
+        <h3> Shopkeeper</h3>
+        <p>Manage inventory and place orders.</p>
+    </div>
+
+    <div class="card">
+        <h3> Retailer</h3>
+        <p>List products and fulfill orders.</p>
+    </div>
+
+    <div class="card">
+        <h3> Wholesaler</h3>
+        <p>Supply products and manage stock.</p>
+    </div>
+
+    <div class="card">
+        <h3> Admin</h3>
+        <p>Manage users and monitor the platform.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
