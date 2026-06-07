@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Registration Form */
+
+.container{
+    width:500px;
+    margin:40px auto;
+    background:white;
+    border:1px solid #ccc;
+    padding:30px;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+    font-size:16px;
+}
+
+.btn{
+    width:100%;
+    background:#006400;
+    color:white;
+    border:none;
+    padding:12px;
+    margin-top:20px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+.login-link{
+    text-align:center;
+    margin-top:15px;
+}
+
+.login-link a{
+    color:#006400;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
+</nav>
+
+<div class="container">
+
+    <h2>User Registration</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name">
+
+        <label>Business Name</label>
+        <input type="text" placeholder="Enter Business Name">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter Email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number">
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter Address"></textarea>
+
+        <label>User Role</label>
+        <select>
+            <option>Select Role</option>
+            <option>Shopkeeper</option>
+            <option>Retailer</option>
+            <option>Wholesaler</option>
+        </select>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create Password">
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password">
+
+        <button type="submit" class="btn">Register</button>
+
+    </form>
+
+    <div class="login-link">
+        Already have an account?
+        <a href="login.html">Login Here</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
