@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retailer Dashboard - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+/* Cards */
+
+.card-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:23%;
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+/* Section */
+
+.section{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.section h3{
+    color:#006400;
+    margin-bottom:15px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:#006400;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+/* Buttons */
+
+.btn{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub - Retailer Panel</div>
+</nav>
+
+<div class="container">
+
+    <h2>Retailer Dashboard</h2>
+
+    <!-- Stats -->
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <h1>120</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending Orders</h3>
+            <h1>8</h1>
+        </div>
+
+        <div class="card">
+            <h3>Delivered Orders</h3>
+            <h1>45</h1>
+        </div>
+
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <h1>₹1,20,000</h1>
+        </div>
+
+    </div>
+
+    <!-- Orders -->
+    <div class="section">
+
+        <h3>Received Orders</h3>
+
+        <table>
+
+            <tr>
+                <th>Order ID</th>
+                <th>Shopkeeper</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>2001</td>
+                <td>Kumar Stores</td>
+                <td>Rice</td>
+                <td>100 Kg</td>
+                <td>Pending</td>
+                <td>
+                    <button class="btn">Accept</button>
+                    <button class="btn">Reject</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2002</td>
+                <td>ABC Grocery</td>
+                <td>Sugar</td>
+                <td>50 Kg</td>
+                <td>Accepted</td>
+                <td>
+                    <button class="btn">Dispatch</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- Product List -->
+    <div class="section">
+
+        <h3>My Products</h3>
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Rice</td>
+                <td>500 Kg</td>
+                <td>₹55/kg</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>Sugar</td>
+                <td>300 Kg</td>
+                <td>₹48/kg</td>
+                <td>Low Stock</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
