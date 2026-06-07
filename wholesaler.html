@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wholesaler Dashboard - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+/* Cards */
+
+.card-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:23%;
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+/* Sections */
+
+.section{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.section h3{
+    color:#006400;
+    margin-bottom:15px;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:#006400;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+/* Buttons */
+
+.btn{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub - Wholesaler Panel</div>
+</nav>
+
+<div class="container">
+
+    <h2>Wholesaler Dashboard</h2>
+
+    <!-- Stats -->
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <h1>350</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending Orders</h3>
+            <h1>12</h1>
+        </div>
+
+        <div class="card">
+            <h3>Delivered Orders</h3>
+            <h1>98</h1>
+        </div>
+
+        <div class="card">
+            <h3>Stock Value</h3>
+            <h1>₹5,00,000</h1>
+        </div>
+
+    </div>
+
+    <!-- Orders -->
+    <div class="section">
+
+        <h3>Incoming Orders</h3>
+
+        <table>
+
+            <tr>
+                <th>Order ID</th>
+                <th>Shopkeeper</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>3001</td>
+                <td>Super Mart</td>
+                <td>Rice</td>
+                <td>200 Kg</td>
+                <td>Pending</td>
+                <td>
+                    <button class="btn">Accept</button>
+                    <button class="btn">Reject</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3002</td>
+                <td>City Stores</td>
+                <td>Oil</td>
+                <td>150 L</td>
+                <td>Accepted</td>
+                <td>
+                    <button class="btn">Dispatch</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- Inventory -->
+    <div class="section">
+
+        <h3>Stock Inventory</h3>
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Available Stock</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Rice</td>
+                <td>2000 Kg</td>
+                <td>₹52/kg</td>
+                <td>High Stock</td>
+            </tr>
+
+            <tr>
+                <td>Sugar</td>
+                <td>800 Kg</td>
+                <td>₹45/kg</td>
+                <td>Medium</td>
+            </tr>
+
+            <tr>
+                <td>Oil</td>
+                <td>500 L</td>
+                <td>₹140/L</td>
+                <td>Low Stock</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
