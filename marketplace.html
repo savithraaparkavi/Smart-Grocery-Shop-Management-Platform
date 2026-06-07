@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+/* Search Box */
+
+.search-box{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+}
+
+/* Table */
+
+.table-box{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:#006400;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+.btn{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
+</nav>
+
+<div class="container">
+
+    <h2>Product Marketplace</h2>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Product...">
+    </div>
+
+    <div class="table-box">
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Supplier Type</th>
+                <th>Supplier Name</th>
+                <th>Price</th>
+                <th>Available Stock</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Rice</td>
+                <td>Retailer</td>
+                <td>ABC Retailers</td>
+                <td>₹55/kg</td>
+                <td>500 Kg</td>
+                <td><button class="btn">Order</button></td>
+            </tr>
+
+            <tr>
+                <td>Sugar</td>
+                <td>Wholesaler</td>
+                <td>XYZ Wholesalers</td>
+                <td>₹48/kg</td>
+                <td>300 Kg</td>
+                <td><button class="btn">Order</button></td>
+            </tr>
+
+            <tr>
+                <td>Cooking Oil</td>
+                <td>Retailer</td>
+                <td>Fresh Foods</td>
+                <td>₹145/L</td>
+                <td>200 L</td>
+                <td><button class="btn">Order</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
