@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Management - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+/* Order Table */
+
+.table-box{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:#006400;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+}
+
+/* Status Colors */
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.accepted{
+    color:blue;
+    font-weight:bold;
+}
+
+.delivered{
+    color:green;
+    font-weight:bold;
+}
+
+.cancelled{
+    color:red;
+    font-weight:bold;
+}
+
+/* Buttons */
+
+.btn{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
+</nav>
+
+<div class="container">
+
+    <h2>Order Management</h2>
+
+    <div class="table-box">
+
+        <table>
+
+            <tr>
+                <th>Order ID</th>
+                <th>Product</th>
+                <th>Supplier</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>1001</td>
+                <td>Rice</td>
+                <td>ABC Retailers</td>
+                <td>100 Kg</td>
+                <td class="pending">Pending</td>
+                <td><button class="btn">Track</button></td>
+            </tr>
+
+            <tr>
+                <td>1002</td>
+                <td>Sugar</td>
+                <td>XYZ Wholesalers</td>
+                <td>50 Kg</td>
+                <td class="accepted">Accepted</td>
+                <td><button class="btn">Track</button></td>
+            </tr>
+
+            <tr>
+                <td>1003</td>
+                <td>Cooking Oil</td>
+                <td>Fresh Foods</td>
+                <td>30 Litres</td>
+                <td class="delivered">Delivered</td>
+                <td><button class="btn">View</button></td>
+            </tr>
+
+            <tr>
+                <td>1004</td>
+                <td>Biscuits</td>
+                <td>Daily Needs</td>
+                <td>20 Boxes</td>
+                <td class="cancelled">Cancelled</td>
+                <td><button class="btn">View</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
