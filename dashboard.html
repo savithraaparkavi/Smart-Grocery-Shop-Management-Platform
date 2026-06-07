@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Dashboard */
+
+.dashboard{
+    width:90%;
+    margin:30px auto;
+}
+
+.dashboard h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:30px;
+}
+
+/* Cards */
+
+.card-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    border:1px solid #ccc;
+    width:23%;
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+/* Sections */
+
+.section{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.section h3{
+    color:#006400;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+/* Buttons */
+
+.btn{
+    background:#006400;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#004d00;
+}
+
+/* Footer */
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
+</nav>
+
+<div class="dashboard">
+
+    <h2>Dashboard</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <h1>250</h1>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock Items</h3>
+            <h1>15</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending Orders</h3>
+            <h1>8</h1>
+        </div>
+
+        <div class="card">
+            <h3>Retailers Available</h3>
+            <h1>35</h1>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h3>Quick Actions</h3>
+
+        <button class="btn">Add Product</button>
+        <button class="btn">View Inventory</button>
+        <button class="btn">Place Order</button>
+        <button class="btn">Generate Report</button>
+    </div>
+
+    <div class="section">
+        <h3>Recent Notifications</h3>
+
+        <ul>
+            <li>Rice stock is running low.</li>
+            <li>Order #1005 has been delivered.</li>
+            <li>Oil stock needs replenishment.</li>
+            <li>New retailer registered.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>AI Recommendations</h3>
+
+        <ul>
+            <li>Reorder Rice within 3 days.</li>
+            <li>Sugar stock is sufficient for 2 weeks.</li>
+            <li>Compare prices before ordering cooking oil.</li>
+            <li>Monitor products nearing expiry.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
