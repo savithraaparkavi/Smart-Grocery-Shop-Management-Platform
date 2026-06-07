@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications - Smart Grocery Hub</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+}
+
+nav{
+    background:#006400;
+    color:white;
+    padding:15px;
+}
+
+.logo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.container h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:20px;
+}
+
+.notification-box{
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:15px;
+}
+
+.notification-box h3{
+    color:#006400;
+    margin-bottom:10px;
+}
+
+.low-stock{
+    border-left:5px solid orange;
+}
+
+.order{
+    border-left:5px solid blue;
+}
+
+.delivery{
+    border-left:5px solid green;
+}
+
+.ai{
+    border-left:5px solid purple;
+}
+
+.expiry{
+    border-left:5px solid red;
+}
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Smart Grocery Hub</div>
+</nav>
+
+<div class="container">
+
+    <h2>Notifications</h2>
+
+    <div class="notification-box low-stock">
+        <h3>Low Stock Alert</h3>
+        <p>Rice stock is below the minimum level. Reorder soon.</p>
+    </div>
+
+    <div class="notification-box order">
+        <h3>Order Update</h3>
+        <p>Order #1002 has been accepted by the supplier.</p>
+    </div>
+
+    <div class="notification-box delivery">
+        <h3>Delivery Notification</h3>
+        <p>Order #1001 has been delivered successfully.</p>
+    </div>
+
+    <div class="notification-box ai">
+        <h3>AI Recommendation</h3>
+        <p>Consider purchasing cooking oil from ABC Retailers for better pricing.</p>
+    </div>
+
+    <div class="notification-box expiry">
+        <h3>Expiry Alert</h3>
+        <p>10 biscuit packets will expire within 7 days.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Grocery Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
